@@ -13,6 +13,7 @@ import nox
     "0.1.7",
     "0.1.8",
     "0.1.9",
+    "0.1.10",
     # Add another supported tapas version
     "latest",  # Keep it if you want to always test latest version
 ])
