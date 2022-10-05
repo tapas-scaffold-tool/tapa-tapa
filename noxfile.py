@@ -1,27 +1,14 @@
 from tempfile import TemporaryDirectory
-from json import dumps
 
 import nox
 
 
 @nox.session()
 @nox.parametrize("tapas_version", [
-    "0.1.10",
-    # Add another supported tapas version
-    "latest",  # Keep it if you want to always test latest version
+    "1.0.2",
 ])
 def tests(session, tapas_version):
-    if tapas_version == "latest":
-        session.install(f"tapas")
-    else:
-        session.install(f"tapas=={tapas_version}")
-    with TemporaryDirectory() as tmp:
-        params = {
-            "name": "test-tapa",
-            "readme": "y",
-            "license": "mit",
-            "git": "y",
-            "nox": "y",
-            "travis": "y",
-        }
-        session.run("tapas", "dir:.", tmp, "-p", dumps(params))
+    session.install("pytest")
+    session.install(f"tapas=={tapas_version}")
+
+    session.run("pytest", "tests")

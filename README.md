@@ -1,9 +1,7 @@
-# tapa
-
-[![Build Status](https://travis-ci.com/tapas-scaffold-tool/tapa-tapa.svg?branch=master)](https://travis-ci.com/tapas-scaffold-tool/tapa-tapa)
+# {{name}}
 
 This is template for [tapas](https://github.com/tapas-scaffold-tool/tapas) scaffold tool.
-This template allow you to easily generate your own tapa (template).
+This template allow you to easily generate {describe what can you generate with this tapa}.
 
 To install tapas run:
 
@@ -14,7 +12,15 @@ pip install tapas
 To generate project with this template run:
 
 ```
-tapas tapa
+tapas {{name}}
 ```
 
 and enter requested parameters.
+
+
+## What to do next:
+
+1. Read [tapas documentation](https://tapas-scaffold-tool.readthedocs.io/en/latest/write-tapa/) of how to write your own tapa.
+2. Set up your tapa.
+3. Fill this README.md file
+4. If you want to share your tapa with the world, create pull-request in [tapas index repository]()https://github.com/tapas-scaffold-tool/tapas-index.

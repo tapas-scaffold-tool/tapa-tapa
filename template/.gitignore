@@ -1,0 +1,6 @@
+# Build directories
+__pycache__
+
+# Test directories
+.nox/
+.pytest_cache/

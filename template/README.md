@@ -18,7 +18,7 @@ tapas {{name}}
 and enter requested parameters.
 
 
-## What to do:
+## What to do next:
 
 1. Read [tapas documentation](https://tapas-scaffold-tool.readthedocs.io/en/latest/write-tapa/) of how to write your own tapa.
 2. Set up your tapa.
